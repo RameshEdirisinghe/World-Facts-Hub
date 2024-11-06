@@ -8,21 +8,20 @@ async function loadItems() {
     items.forEach(element => {
         console.log(element);
         body+=`
-            <div class="col m-5">
+            <div class="col-sm-6 col-lg-4 mb-4">
                 <div class="card shadow-sm">
-                  <img src=${element.flags.png} alt="">
-                  <div class="card-body">
-                    <h3 class="card-text fw-bold">${element.name.common}</h3>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                      </div>
-                      <small class="text-body-secondary">9 mins</small>
+                    <img src="${element.flags.png}" class="card-img-top" alt="Country Flag">
+                    <div class="card-body">
+                        <h3 class="card-text fw-bold">${element.name.common}</h3>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group m-3 text-center align-items-center">
+                                <a href="${element.maps.googleMaps}" class="btn btn-primary">Google Maps</a>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+            </div>
         `;        
     });
 
@@ -31,24 +30,6 @@ async function loadItems() {
     document.getElementById("card").innerHTML=body;
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 async function search() {
@@ -61,13 +42,31 @@ async function search() {
     let cardbody="";
     items.forEach(element => {
         if (element.name.common == searchCountry) {
-            cardbody= `<div class="card" style="width: 18rem;">
+            cardbody= `<div class="card" style="width:800px;">
                 <img src="${element.flags.png}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">${element.name.official}</h5>
-                        <p>Region - ${element.region}</p>
-                        <p>Sub Region - ${element.subregion}</p>
+                        <h1 class="card-title">${element.name.official}</h1>
                         <a href="${element.maps.googleMaps}" class="btn btn-primary">Google Maps</a>
+                    </div>
+                    <div class="row  text-start">
+                    <div class="col">
+                    <ul>
+                      <li>Region - ${element.region}</li>
+                      <li>Sub Region - ${element.subregion}</li>
+                      <li>Time Zone -${element.timezones}</li>
+                    </ul>
+                    
+                    </div>
+
+                    <div class="col">
+                    <ul>
+                      <li>Capital- ${element.capital}</li>
+                      <li>Population - ${element.population}</li>
+                      <li>Area - ${element.area} km²</li>
+                    </ul>
+                    
+                    </div>
+                    
                     </div>
             </div>`
         }
