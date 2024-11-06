@@ -19,7 +19,7 @@
 
 You can view the live version of this project at the following link:
 
-[**World Facts Hub - Live**](https://your-deployment-link.com)
+[**World Facts Hub - Live**]([https://rameshedirisinghe.github.io/World-Facts-Hub/])
 
 ## Installation
 
