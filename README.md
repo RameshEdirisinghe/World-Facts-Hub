@@ -12,30 +12,15 @@
 ## Tech Stack
 
 - **Frontend**: HTML, CSS, JavaScript
-- **API**: [https://restcountries.com/] (for country data)
+- **API**: [Insert API name or link here] (for country data)
 - **Responsive Design**: Media queries to ensure adaptability on all devices
 
 ## Deployment
 
 You can view the live version of this project at the following link:
 
-[**World Facts Hub - Live**]([https://rameshedirisinghe.github.io/World-Facts-Hub/])
+[**World Facts Hub - Live**](https://your-deployment-link.com)
 
-## Installation
-
-1. Clone the repository to your local machine:
-
-   ```bash
-   git clone https://github.com/yourusername/world-facts-hub.git
-   ```
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd world-facts-hub
-   ```
-
-3. Open `index.html` in your browser to start exploring the world!
 
 ## How to Use
 
@@ -50,4 +35,5 @@ Feel free to fork the repository, submit issues, or make pull requests. Contribu
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
