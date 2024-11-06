@@ -8,20 +8,18 @@ async function loadItems() {
   items.forEach(element => {
     console.log(element);
     body += `
-            <div class="col-sm-6 col-lg-4 mb-4">
-                <div class="card shadow-sm">
-                    <img src="${element.flags.png}" class="card-img-top" alt="Country Flag">
-                    <div class="card-body">
-                        <h3 class="card-text fw-bold">${element.name.common}</h3>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group m-3 text-center align-items-center">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="${element.flags.png}" class="card-img-top" alt="Country Flag">
+                        <div class="card-body">
+                            <h3 class="card-text fw-bold">${element.name.common}</h3>
+                            <div class="d-flex justify-content-between align-items-center">
                                 <a href="${element.maps.googleMaps}" class="btn btn-primary">Google Maps</a>
+                                <small class="text-muted">9 mins</small>
                             </div>
-                            <small class="text-muted">9 mins</small>
                         </div>
                     </div>
                 </div>
-            </div>
         `;
   });
 
