@@ -12,14 +12,14 @@
 ## Tech Stack
 
 - **Frontend**: HTML, CSS, JavaScript
-- **API**: [Insert API name or link here] (for country data)
+- **API**: [https://restcountries.com/] (for country data)
 - **Responsive Design**: Media queries to ensure adaptability on all devices
 
 ## Deployment
 
 You can view the live version of this project at the following link:
 
-[**World Facts Hub - Live**](https://your-deployment-link.com)
+[**World Facts Hub - Live**](https://rameshedirisinghe.github.io/World-Facts-Hub/)
 
 
 ## How to Use
