@@ -1,13 +1,13 @@
 loadItems();
 
 async function loadItems() {
-    
-    let res = await fetch("https://restcountries.com/v3.1/all");
-    let items = await res.json();
-    let body = "";
-    items.forEach(element => {
-        console.log(element);
-        body+=`
+
+  let res = await fetch("https://restcountries.com/v3.1/all");
+  let items = await res.json();
+  let body = "";
+  items.forEach(element => {
+    console.log(element);
+    body += `
             <div class="col-sm-6 col-lg-4 mb-4">
                 <div class="card shadow-sm">
                     <img src="${element.flags.png}" class="card-img-top" alt="Country Flag">
@@ -22,31 +22,30 @@ async function loadItems() {
                     </div>
                 </div>
             </div>
-        `;        
-    });
+        `;
+  });
 
-    console.log(body);
+  console.log(body);
 
-    document.getElementById("card").innerHTML=body;
-    
+  document.getElementById("card").innerHTML = body;
+
 }
 
 
-async function search() {
-    let searchCountry = document.getElementById("Search").value;
-    let card = document.getElementById("card");
-   
+async function search(){
+  let searchCountry = document.getElementById("Search").value;
+  let card = document.getElementById("card");
 
-    let res =await fetch("https://restcountries.com/v3.1/all");
-    let items =await res.json();
-    let cardbody="";
-    items.forEach(element => {
-        if (element.name.common == searchCountry) {
-            cardbody= `<div class="card" style="width:800px;">
+
+  let res = await fetch("https://restcountries.com/v3.1/all");
+  let items = await res.json();
+  let cardbody = "";
+  items.forEach(element => {
+    if (element.name.common == searchCountry) {
+      cardbody = `<div class="card" style="width:800px;">
                 <img src="${element.flags.png}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h1 class="card-title">${element.name.official}</h1>
-                        <a href="${element.maps.googleMaps}" class="btn btn-primary">Google Maps</a>
                     </div>
                     <div class="row  text-start">
                     <div class="col">
@@ -68,9 +67,12 @@ async function search() {
                     </div>
                     
                     </div>
+                    <div class="m-4">
+                    <a href="${element.maps.googleMaps}" class="btn btn-primary">Google Map</a>
+                    </div>
             </div>`
-        }
-    });
+    }
+  });
 
-    document.getElementById("card").innerHTML=cardbody;
+  document.getElementById("card").innerHTML = cardbody;
 }
