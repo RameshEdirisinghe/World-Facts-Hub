@@ -29,13 +29,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Home</a>
+                            <a class="nav-link text-light" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">About</a>
+                            <a class="nav-link text-light" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Contact</a>
+                            <a class="nav-link text-light" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -43,7 +43,7 @@
         </nav>
     </header>
 
-    <div class="container">
+    <div class="container" id="home">
         <div class="row justify-content-center">
             <div class="col-md-8 text-center">
                 <h1 class="display-4 fw-bold mb-4 fw-bolder m-5">World Facts Hub-> Dive into Country Details</h1>
@@ -55,12 +55,37 @@
             </div>
         </div>
 
-
-
-
         <div class="container">
             <div class="row justify-content-center" id="card"></div>
         </div>
+        <br>
+        <br>
+        <section id="about" class="mt-5">
+            <h2 class="text-center fw-bold mb-3">About World Facts Hub</h2>
+            <p class="text-center fs-5">World Facts Hub is your go-to source for discovering interesting facts and details about countries worldwide. Dive into our vast collection of information and explore the world from the comfort of your screen.</p>
+        </section>
+        <br>
+        <br>
+        <section id="contact" class="mt-5 pt-5 pb-5 bg-light">
+            <div class="container text-center">
+                <h2 class="fw-bold mb-4">Contact Us</h2>
+                <p class="fs-5">Have questions or want to learn more? Feel free to reach out!</p>
+                <form class="row g-3 justify-content-center">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="col-12">
+                        <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </div>
     <footer class="pt-5 my-5 text-body-secondary border-top m-5">
         Created by the RameshEdirisinghe &middot; &copy; 2024
